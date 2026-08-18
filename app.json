@@ -1,46 +1,33 @@
 {
-  "name": "-bot",
-  "description": "🤖 WhatsApp Bot with commands folder support",
-  "repository": "https://github.com/unlimitedtmd-jpg/Avernges-Tmb",
-  "logo": "https://files.catbox.moe/dfe0h0.jpg",
-  "keywords": [
-    "whatsapp-bot",
-    "nodejs",
-    "baileys",
-    "whatsapp",
-    "bot",
-    "averngesmin"
-  ],
-  "env": {
-    "PORT": {
-      "value": "10000"
-    },
-    "NODE_ENV": {
-      "value": "production"
-    },
-    "OWNER_NUMBER": {
-      "value": "255784766591"
-    },
-    "BOT_NAME": {
-      "value": "Avernges-bot"
-    },
-    "NPM_CONFIG_LEGACY_PEER_DEPS": {
-      "value": "true"
+    "name": "AVERNGES-V1",
+    "description": "Avernges  web bot",
+    "logo": "https://raw.githubusercontent.com/unlimitedtmd-jpg/Avernges-Tmb/main/Avernges-img/IMG_3047.png",
+    "repository": "https://github.com/unlimitedtmd-jpg/Avernges-Tmb",
+    "keywords": [
+        "atlasminibot",
+        "MiniBot"
+    ],
+    "success_url": "/",
+    "buildpacks": [
+        {
+            "url": "https://github.com/heroku/heroku-buildpack-nodejs#latest"
+        }
+    ],
+    "addons": [
+        {
+            "plan": "heroku-postgresql",
+            "as": "DATABASE"
+        }
+    ],
+    "env": {
+        "PORT": {
+            "description": "Port for web app.4000,5000,3000... any!",
+            "value": "3000",
+            "required": false
+        },
+        "DATABASE_URL": {
+            "description": "PostgreSQL database URL (auto-configured by Heroku Postgres)",
+            "required": false
+        }
     }
-  },
-  "buildpacks": [
-    {
-      "url": "https://github.com/heroku/heroku-buildpack-activestorage-preview"
-    },
-    {
-      "url": "heroku/nodejs"
-    }
-  ],
-  "formation": {
-    "web": {
-      "quantity": 1,
-      "size": "basic"
-    }
-  },
-  "stack": "heroku-26"
 }
