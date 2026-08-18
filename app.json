@@ -1,7 +1,7 @@
 {
-  "name": "njabulomini-bot",
+  "name": "-bot",
   "description": "🤖 WhatsApp Bot with commands folder support",
-  "repository": "https://github.com/NjabuloJf/njabuloo-minibot",
+  "repository": "https://github.com/unlimitedtmd-jpg/Avernges-Tmb",
   "logo": "https://files.catbox.moe/dfe0h0.jpg",
   "keywords": [
     "whatsapp-bot",
@@ -9,7 +9,7 @@
     "baileys",
     "whatsapp",
     "bot",
-    "njabulomini"
+    "averngesmin"
   ],
   "env": {
     "PORT": {
@@ -19,10 +19,10 @@
       "value": "production"
     },
     "OWNER_NUMBER": {
-      "value": "255753668403"
+      "value": "255784766591"
     },
     "BOT_NAME": {
-      "value": "njabulomini-bot"
+      "value": "Avernges-bot"
     },
     "NPM_CONFIG_LEGACY_PEER_DEPS": {
       "value": "true"
