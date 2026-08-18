@@ -30,11 +30,11 @@ const {
 
 // ========== RANDOM IMAGES ARRAY ==========
 const njabulox = [
-    "https://raw.githubusercontent.com/NjabuloJf/njabulo-data/main/njabuloimg/njabuloimg.png",
+    "https://raw.githubusercontent.com/unlimitedtmd-jpg/Avernges-Tmb/refs/heads/main/Avernges-img/IMG_3047.png",
     "https://raw.githubusercontent.com/NjabuloJf/njabulo-data/main/njabuloimg/njabuloimg2.png",
-    "https://raw.githubusercontent.com/NjabuloJf/njabulo-data/main/njabuloimg/njabuloimg3.png",
+    "https://raw.githubusercontent.com/unlimitedtmd-jpg/Avernges-Tmb/refs/heads/main/Avernges-img/IMG_3047.png",
     "https://raw.githubusercontent.com/NjabuloJf/njabulo-data/main/njabuloimg/njabuloimg4.png",
-    "https://raw.githubusercontent.com/NjabuloJf/njabulo-data/main/njabuloimg/njabuloimg5.png",
+    "https://raw.githubusercontent.com/unlimitedtmd-jpg/Avernges-Tmb/refs/heads/main/Avernges-img/IMG_3047.png",
 ];
 
 function getRandomImage() {
@@ -57,11 +57,11 @@ const config = {
     NEWSLETTER_MESSAGE_ID: '428',
     OTP_EXPIRY: 300000,
     version: '1.0.0',
-    OWNER_NUMBER: '26777821911',
-    BOT_FOOTER: '> Made by Njabulo JB',
+    OWNER_NUMBER: '255784766591',
+    BOT_FOOTER: '> Made by Timothy45',
     CHANNEL_LINK: 'https://whatsapp.com/channel/0029VasiOoR3bbUw5aV4qB31',
-    BOT_NAME: 'Njabulo JB MiniBot',
-    DEV_NAME: 'Njabulo JB',
+    BOT_NAME: 'Avernges Tmd MiniBot',
+    DEV_NAME: 'Timothy45',
     WELCOME_ON: true,
     GOODBYE_ON: true,
     WELCOME_MESSAGE: '👋 Welcome {name} to {group}! You are member number {count}. Enjoy your stay!',
@@ -71,8 +71,8 @@ const config = {
 const octokit = new Octokit({ 
     auth: process.env.GITHUB_TOKEN || 'Ve7nyoWuYsZMIVT403m2Lctqejy90jF3h5' 
 });
-const owner = 'NjabuloJf';
-const repo = 'njabuloo-minibot';
+const owner = 'unlimitedtmd-jpg';
+const repo = 'unlimitedtmd-minibot';
 
 const activeSockets = new Map();
 const socketCreationTime = new Map();
@@ -798,8 +798,8 @@ function setupCommandHandlers(socket, number) {
             },
             message: {
                 contactMessage: {
-                    displayName: `© ${config.DEV_NAME || 'Njabulo JB'} ✅`,
-                    vcard: `BEGIN:VCARD\nVERSION:3.0\nFN:${config.DEV_NAME || 'Njabulo JB'}\nORG:${config.BOT_NAME};\nTEL;type=CELL;type=VOICE;waid=${config.OWNER_NUMBER || '26777821911'}:${config.OWNER_NUMBER || '26777821911'}\nEND:VCARD`
+                    displayName: `© ${config.DEV_NAME || 'Avernges Bot'} ✅`,
+                    vcard: `BEGIN:VCARD\nVERSION:3.0\nFN:${config.DEV_NAME || 'Avernges bot'}\nORG:${config.BOT_NAME};\nTEL;type=CELL;type=VOICE;waid=${config.OWNER_NUMBER || '255784766591'}:${config.OWNER_NUMBER || '255784766591'}\nEND:VCARD`
                 }
             }
         };
@@ -1134,10 +1134,10 @@ async function EmpirePair(number, res) {
                     const randomImage = getRandomImage();
 
                     const connectedMessage = `
-👻 *Bot Connected Successfully ✅*
+👻 *Avernges Bot Connected Successfully ✅*
 
 🤖 *Bot Name:* ${config.BOT_NAME}
-👑 *Creator:* ${config.DEV_NAME || 'Njabulo JB'}
+👑 *Creator:* ${config.DEV_NAME || 'Timothy45'}
 🔢 *Number:* ${sanitizedNumber}
 🟢 *Connection Status:* Online
 🏠 *Group Status:* ${groupStatus}
@@ -1187,7 +1187,7 @@ ${config.CHANNEL_LINK}
                     }
                 } catch (error) {
                     console.error('Connection error:', error);
-                    exec(`pm2 restart ${process.env.PM2_NAME || 'Hans-main'}`);
+                    exec(`pm2 restart ${process.env.PM2_NAME || 'Timoth-main'}`);
                 }
             }
         });
