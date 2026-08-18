@@ -1,5 +1,5 @@
 {
-  "name": "njabulomini-bot",
+  "name": "Avernges,min-bot",
   "version": "1.0.0",
   "description": "WhatsApp Bot with Multi-Language Support",
   "main": "index.js",
@@ -45,11 +45,11 @@
     "whatsapp",
     "bot",
     "multi-device",
-    "baileys",
-    "njabulomini",
+    "baileys",r
+    "averngesmin",
     "translation",
     "multi-language"
   ],
-  "author": "Hans Tech",
+  "author": "Timothy45 Tech",
   "license": "MIT"
 }
