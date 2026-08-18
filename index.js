@@ -41,11 +41,11 @@ app.use((err, req, res, next) => {
 app.listen(PORT, () => {
     console.log(`
 ╔════════════════════════════════════════╗
-║     🤖 njabulomini-bot is alive!      ║
+║     🤖 Averngesmin-bot is alive!      ║
 ║                                        ║
 ║     📡 Server running on port: ${PORT}    ║
 ║     🌐 URL: http://localhost:${PORT}    ║
-║     👑 Made by Hans Tech              ║
+║     👑 Made by Timothy45 Tech              ║
 ╚════════════════════════════════════════╝
     `);
 });
